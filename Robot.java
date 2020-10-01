@@ -13,9 +13,7 @@ public class Robot extends SampleRobot{
     Talon               motorLeft, motorRight;
     Joystick            stick;
 
-    /**
-     * Constructor. Called once when this class is created.
-     */
+
     public Robot() 
     {
         System.out.println("Robot.constructor()");
@@ -67,12 +65,6 @@ public class Robot extends SampleRobot{
         robotDrive.tankDrive(0.0, 0.0);         // stop motors.
     }
 
-    /**
-     * Runs the motors with arcade steering, input from joystick.
-     * Called by the driver station or field control system at the
-     * start of the operator control (teleop) period. Runs in a loop
-     * until robot is disabled.
-     */
     public void operatorControl() 
     {
         System.out.println("Robot.operatorControl()");
